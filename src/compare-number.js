@@ -1,11 +1,5 @@
 'use strict';
 class CompareNumber {
-
-    constructor(random, guess) {
-        this.random = random;
-        this.guess = guess;
-    }
-
     static compareNumber(random, guess) {
         let randomArray = Array.from(random);
         let guessArray = Array.from(guess);
