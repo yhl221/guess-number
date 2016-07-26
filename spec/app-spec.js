@@ -1,5 +1,6 @@
 'use strict';
 const CompareNumber = require('../src/compare-number.js');
+const AnswerGenerator=require('../src/answer-generator.js');
 describe('guess number game', ()=> {
     let randomNumber = '1234';
     let firstInput = '1234';
@@ -15,4 +16,9 @@ describe('guess number game', ()=> {
         const expectSecondResult = '0A4B';
         expect(resultSecond).toEqual(expectSecondResult);
     });
+
+    it('test AnswerGenerator',()=>{
+        const answer=AnswerGenerator.checkRandomNumber();
+        expect(answer).toBe(true);
+    })
 });
