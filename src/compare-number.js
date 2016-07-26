@@ -1,5 +1,6 @@
 'use strict';
 class CompareNumber {
+
     static compareNumber(random, guess) {
         let randomArray = Array.from(random);
         let guessArray = Array.from(guess);
